@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import Main from './components/main/Main'
-import FichaDeTurno from "../FichaDeTurno/FichaDeTurno";
+import FichaDeTurno from './components/FichaDeTurno/FichaDeTurno'
 
 function App() {
   // const [count, setCount] = useState(0)
