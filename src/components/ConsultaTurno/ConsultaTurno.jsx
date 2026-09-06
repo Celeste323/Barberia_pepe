@@ -1,17 +1,8 @@
-import { useState } from 'react'
-
-import Navbar from './components/navbar/Navbar'
-import Footer from './components/footer/Footer'
-import Main from './components/main/Main'
 import FichaDeTurno from "../FichaDeTurno/FichaDeTurno";
 
-function App() {
-  // const [count, setCount] = useState(0)
-
+function ConsultaTurnos() {
   return (
-    <div className="d-flex flex-column min-vh-100">
-      <Navbar />
-      <Main/>
+    <div>
       <FichaDeTurno cargando={true} />
       <FichaDeTurno error={true} />
       <FichaDeTurno turno={null} />
@@ -29,9 +20,8 @@ function App() {
         observaciones: "",
         sesiones: 0
       }} />
-      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default ConsultaTurnos;
